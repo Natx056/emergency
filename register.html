@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/burger.css" />
+    <link rel="stylesheet" href="css/cards.css" />
+    <link rel="stylesheet" href="css/forms.css" />
+    <link rel="icon" type="image/png" href="img/fav.png" />
+    <title>Emergency Site</title>
+  </head>
+  <body id="register">
+    <header>
+      <nav>
+        <div id="logotype-wrapper" class="logo">
+          <a href="index.html"> LOGO-TYPE </a>
+        </div>
+        <ul class="menu">
+          <li><a class="menuItem" href="instruction.html">Kendetegn </a></li>
+          <li><a class="menuItem" href="register.html">Indberet</a></li>
+        </ul>
+        <button class="burger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <h1>INDBERET</h1>
+      <section id="form-section">
+        <article id="form-info">
+          <h2>Din ven er en alien!!!</h2>
+          <p>Hjælp os med at fange alle aliens ved at udfylde deres informationer.</p>
+        </article>
+        <form id="webform">
+          <section>
+            <form aria-label="alien signup form">
+              <div class="form-group">
+                <label for="first_name">Fornavn</label>
+                <input type="text" id="first_name" name="first_name" aria-describedby="fname-error" required />
+                <p class="error-message" id="fname-error">Please enter a value</p>
+              </div>
+
+              <div class="form-group">
+                <label for="last_name">Efternavn</label>
+                <input type="text" id="last_name" name="last_name" aria-describedby="lname-error" required />
+                <p class="error-message" id="lname-error">Please enter a value</p>
+              </div>
+
+              <div class="form-group">
+                <label for="plejehjem">Plejehjem</label>
+                <input type="plejehjem" id="plejehjem" name="plejehjem" aria-describedby="phjem-error" required />
+                <p class="error-message" id="phjem-error">Please enter a value</p>
+              </div>
+
+              <div class="form-group">
+                <label for="adresse">Adresse</label>
+                <input type="adresse" id="adresse" name="adresse" aria-describedby="addresse-error" required />
+                <p class="error-message" id="adresse-error">Please enter a value</p>
+              </div>
+
+              <div class="form-group">
+                <label for="accept_terms">
+                  <input type="checkbox" id="accept_terms" name="accept_terms" value="Ja" aria-describedby="terms-error" required />
+                  Jeg er ikke en alien
+                </label>
+                <p class="error-message" id="terms-error">Please tick the box</p>
+              </div>
+
+              <button>Send</button>
+            </form>
+          </section>
+        </form>
+      </section>
+      <section id="form-summary">
+        <h2>Summary</h2>
+        <article>
+          <p class="placeholder">Opsummering</p>
+        </article>
+        <section class="output">
+          <div>
+            <p>Fornavn: <span id="first_name_output"></span></p>
+            <p>Efternavn: <span id="last_name_output"></span></p>
+            <p>Plejehjem: <span id="plejehjem_output"></span></p>
+            <p>Adresse: <span id="adresse_output"></span></p>
+            <p>Ikke en alien: <span id="terms_output"></span></p>
+          </div>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <nav class="some">
+        <ul>
+          <li><a href="">link</a></li>
+          <li><a href="">link</a></li>
+          <li><a href="">link</a></li>
+          <li><a href="">link</a></li>
+        </ul>
+      </nav>
+      <nav class="another">
+        <ul>
+          <li><a href="">link</a></li>
+          <li><a href="">link</a></li>
+          <li><a href="">link</a></li>
+          <li><a href="">link</a></li>
+        </ul>
+      </nav>
+      <nav class="yetanother">
+        <ul>
+          <li><a href="">link</a></li>
+          <li><a href="">link</a></li>
+          <li><a href="">link</a></li>
+          <li><a href="">link</a></li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="js/burger.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+    <script src="js/register.js"></script>
+  </body>
+</html>
