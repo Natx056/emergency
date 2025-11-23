@@ -31,11 +31,11 @@
   padding: 0;
 }
 input {
-  border: 1px solid #000000;
+  border: 2px solid #fceb94;
   background-color: #fffae2;
-  padding: .25rlh;
+  padding: 0.25rlh;
   border-radius: 6px;
-  box-shadow: 0px 1px 2px #0001;
+  box-shadow: 0px 1px 2px #e2eaff;
 }
 
 button {
@@ -43,7 +43,7 @@ button {
   background-color: #ff4b00;
   color: #fff;
   border-radius: 6px;
-  padding: .25rlh .5rlh;
+  padding: 0.25rlh 0.5rlh;
   cursor: pointer;
 }
 
@@ -51,27 +51,25 @@ button {
   color: darkred;
 }
 
-
 form {
   display: grid;
   gap: 1rlh;
   padding: 1rlh;
-  
+
   .form-group {
     display: grid;
     gap: 0.1rlh;
   }
-  
+
   label:has(input) {
     display: flex;
     align-items: center;
     gap: 0.25rlh;
     justify-self: start;
   }
-} 
+}
 
-
-:focus-visible { 
+:focus-visible {
   outline: 2px solid #6f90eb;
   outline-offset: 1px;
 }
@@ -81,9 +79,8 @@ button:hover {
 }
 
 button:active {
-  scale: .98;
+  scale: 0.98;
 }
-
 
 .error-message {
   display: none;
@@ -100,13 +97,11 @@ button:active {
     outline: 3px solid #f005;
     border-color: darkred;
   }
-  
+
   .error-message {
     display: block;
   }
 }
-
-
 
 section {
   display: grid;
@@ -119,5 +114,5 @@ section {
   padding: 1rlh;
   border-radius: 6px;
   display: grid;
-  gap: .5rlh;
+  gap: 0.5rlh;
 }

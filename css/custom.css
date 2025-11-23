@@ -1,21 +1,22 @@
 :root {
+  color-scheme:light;
   /* Colours */
-  --color-bg: #fceb94; /* page background /*
+  --color-bg:light-dark(#fceb94,#707070); /* page background /*
 
   /* Header */
-  --color-head-bg: #ff4b00;
+  --color-head-bg:light-dark(#ff4b00,#ff4b00) ;
 
   /* Logotype */
-  --color-logotype-bg: #000;
-  --color-text-logotype: #fff;
+  --color-logotype-bg:light-dark(#000,#000) ;
+  --color-text-logotype:light-dark(#fff,#fff) ;
   --font-logotype-size: 1rem;
 
   /* Global menu */
-  --color-menu-bg: #6f90eb;
+  --color-menu-bg: light-dark(#6f90eb,#6f90eb);
   /* Links */
-  --color-link-bg: #fffae2;
-  --color-link-hover: #fff; /* used */
-  --color-link-active: #fffae2; /* used */
+  --color-link-bg:light-dark(#fffae2,#fffae2) ;
+  --color-link-hover:light-dark(#fff,#fff);  /* used */
+  --color-link-active: light-dark(#fffae2,#fffae2); /* used */
   --border-radius-links: 37px;
 
   /* Headlines og rubrik */
@@ -23,12 +24,12 @@
   --font-sub1-size: 1rem;
   --font-h2-size: 1rem;
   --font-h3-size: 1rem;
-  --color-headline-bg: #000000;
-  --color-headline-text-page: #ffffff;
+  --color-headline-bg:light-dark(#000000,#fffae2);
+  --color-headline-text-page:light-dark(#ffffff,#272727) ;
 
   /* Tekst */
-  --color-text: #000;
-  --color-text-inverted: #cdccc4;
+  --color-text:light-dark(#000,#000) ;
+  --color-text-inverted:light-dark(#ffffff,#272727);
 
   /*  Marginer */
   --margin-head-bottom: 5px;
@@ -37,13 +38,13 @@
   --border-radius: 5px;
 
   /* Cards */
-  --color-card-bg: #ffffff;
-  --color-cta-card-bg: #ff4b00;
+  --color-card-bg:light-dark(#ffffff,#272727) ;
+  --color-cta-card-bg:light-dark(#ff4b00,#ff4b00) ;
   /* news-cards */
-  --color-news-bg: #fffae2;
-  --color-news-bg-inverted: #dbe2f5;
-  --color-cta-newscard-bg: #ffa680;
-  --color-cta-newscard-bg-inverted: #6f90eb;
+  --color-news-bg:light-dark(#fffae2,#494949) ;
+  --color-news-bg-inverted:light-dark(#dbe2f5,#494949);
+  --color-cta-newscard-bg: light-dark(#ffa680,#7a5748) ;
+  --color-cta-newscard-bg-inverted:light-dark(#6f90eb,#d9e3ff);
 
   /* Fonts */
   --font-family-sans: ui-sans-serif;
@@ -63,7 +64,58 @@
   --form-submit-size: 1rem;
 
   /* Infographics */
-  --color-info-bg: #fffae2;
-  --color-infobox-1-bg: #fceb94;
-  --color-infobox-2-bg: #def5db;
+  --color-info-bg: light-dark(#fffae2,#494949);
+  --color-infobox-1-bg:light-dark(#fceb94,#777153);
+  --color-infobox-2-bg:light-dark(#def5db,#586556);
+}
+html.dark {
+  color-scheme:dark;
+}
+
+label {
+  display: flex;
+  align-items: center;
+}
+
+[role="switch"] {
+  --h:1.5rem;
+  --w:2.5rem;
+  font: inherit;
+appearance:none;
+  background:gainsboro;
+  height:var(--h);
+  width:var(--w);
+border: 1px solid #000;
+cursor:pointer;
+border-radius:999px;
+}
+
+[role="switch"]::before{
+  content: "";
+  display: block;
+  padding:3px;
+  height:100%;
+  aspect-ratio:1;
+  background:grey content-box;
+  border-radius:inherit;
+  transition:.3s;
+  
+}
+
+[role="switch"]:checked::before{
+  background-color:#ff4b00;
+  translate:calc(var(--w) - var(--h) );
+  
+}
+
+
+
+
+
+
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
 }

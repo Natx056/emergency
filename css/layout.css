@@ -83,3 +83,13 @@ footer ul {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
+li{
+  list-style: none;
+  padding: auto;
+  margin-bottom: 1em;
+}
+
+p{
+  padding: auto;
+}

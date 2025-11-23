@@ -91,3 +91,51 @@
   content: "\2192";
   margin-left: 1rem;
 }
+
+[popover] {
+  max-height: 90vh;
+  max-width: 70ch;
+  width: 90vw;
+  margin: auto;
+  background-color: #fafafa;
+}
+
+[popover] {
+  opacity:0 ;
+  transition:300ms allow-discrete;
+
+
+}
+
+[popover]:popover-open{
+opacity: 1;
+
+}
+
+@starting-style{
+  [popover]:popover-open{
+opacity: 0;
+
+}
+}
+
+::backdrop {
+  opacity: 0;
+  transition: .5s allow-discrete;
+  background: #0008 ;
+}
+
+:popover-open::backdrop {
+  opacity: 1;
+}
+
+@starting-style {
+  :popover-open::backdrop {
+    opacity: 0;
+  }
+}
+
+button{
+  border: none;
+  margin: 1.5em;
+}

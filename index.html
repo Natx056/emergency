@@ -18,12 +18,18 @@
     <header>
       <nav>
         <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> LOGO-TYPE </a>
+          <a href="index.html"  alt=""> LOGO-TYPE </a>
+          
         </div>
         <ul class="menu">
           <li><a class="menuItem" href="instruction.html">Kendetegn </a></li>
           <li><a class="menuItem" href="register.html">Indberet</a></li>
-        </ul>
+        <label>
+  Theme
+  <input id="theme-toggle" role="switch" type="checkbox" >
+</label>
+      </ul>
+        
         <button class="burger">
           <span class="line"></span>
           <span class="line"></span>
@@ -33,34 +39,29 @@
     </header>
     <section id="main-disclamer">
       <div id="main-disclamer-content">
-        <img src="warning" alt="ICON" />
+       <img src="img/logo 1.svg" alt="ICON" />
+         
         <div>
-          <h1>OVERSKRIFT</h1>
-          <p class="sub">Underrubrik</p>
+          <h1>Alien invasion</h1>
+          <p class="sub">Aleins på danske plejehjem</p>
         </div>
       </div>
     </section>
     <main>
       <section id="daily">
         <article class="daily_card">
-          <img src="" alt="teaser_img" />
+          <img src="img/svg export little.svg" alt="teaser_img" />
           <div class="daily_text">
-            <h2>Teaser</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
-            </p>
+            <h2>Chok på Solbakken</h2>
+            <p>Plejehjem Invaderet af Uidentificerede Rumvæsener.</p>
             <a href="" class="cta_btn">Se mere</a>
           </div>
         </article>
         <article class="daily_card">
-          <img src="" alt="teaser_img" />
+          <img src="img/sick.png" alt="teaser_img" />
           <div class="daily_text">
-            <h2>Teaser</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
-            </p>
+            <h2>Hvilke sygdomme vil aliens teste på mennesker?</h2>
+            <p>Med aliens, der pludselig dukker op på plejehjem og i haver, spekulerer forskere nu på, hvilke konkrete menneskelige sygdomme de kunne finde mest interessante at studere. Her er nogle specifikke bud:</p>
             <a href="" class="cta_btn">Se mere</a>
           </div>
         </article>
@@ -68,21 +69,89 @@
       <section id="breaking">
         <article class="news_card">
           <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <p>Chok på Solbakken: Plejehjem Invaderet af Uidentificerede Rumvæsener</p>
+          <img src="img/run.png" alt="run" />
+          <button popovertarget="news_popover" class="cta_btn">Læs mere</button>
+
+          <div id="news_popover" popover>
+            <h2>Chok på Solbakken: Plejehjem Invaderet af Uidentificerede Rumvæsener</h2>
+
+            <p>SOLBAKKEN – 13. november 2025</p>
+
+            <p>
+              Solbakkens plejehjem blev i dag centrum for en usædvanlig og skræmmende begivenhed, da flere uidentificerede flyvende objekter landede på grunden, og væsener fra det ydre rum blev observeret blandt de ældre beboere. Personalet
+              fortæller, at invationen begyndte omkring kl. 10.30, hvor lyse, flimrende lys blev set på himlen.
+            </p>
+            <p>
+              Kort efter trådte små, grønne humanoide væsener ind i fællesrummene, tilsyneladende nysgerrige, men uden umiddelbart voldeligt adfærd. “Det var surrealistisk. Først troede vi, det var en elaborate prank, men så begyndte de at
+              kommunikere med os på en slags lys- og lydsignal,” fortæller plejepersonalet. Flere beboere har senere beskrevet oplevelsen som “mærkelig, men ikke skræmmende.”
+            </p>
+
+            <p>
+              Myndighederne blev hurtigt tilkaldt, og både politi og videnskabelige eksperter arbejder nu på stedet for at forstå de uventede gæster. Der er endnu ingen rapporter om skader, og beboerne siges at være i god behold. Eksperter spekulerer
+              på, at aliens kan være interesseret i jordiske sociale strukturer, og plejehjemmet kan have fanget deres opmærksomhed på grund af dets “rolige og organiserede miljø.” Flere videnskabsmænd opfordrer nu offentligheden til at holde afstand
+              og observere situationen fra sikker afstand, mens kommunikationen med væsenerne forsøges forstået.
+            </p>
+            <p>Plejehjemsledelsen har udtrykt både bekymring og fascination: “Vi har altid sagt, at vores beboere er verdensmestre i tålmodighed. Måske er de også verdensmestre i intergalaktisk gæstfrihed,” siger lederen med et skævt smil.</p>
+
+            <button popovertarget="news_popover" class="cta_btn">Luk</button>
+          </div>
         </article>
         <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <h3>God råd</h3>
+          <p>Sådan Beskytter Du Dig Mod Uventede Rumvæsener</p>
+          <img src="img/gear.png" alt="beskytte" />
+          <button popovertarget="tip_popover" class="cta_btn">Læs mere</button>
+
+          <div id="tip_popover" popover>
+            <h2>Sådan Beskytter Du Dig Mod Uventede Rumvæsener - En Guide til Ældre</h2>
+            <p>SOLBAKKEN 10. november 2025</p>
+            <p>Med den seneste invasion af uidentificerede væsener på Solbakkens plejehjem kan mange ældre borgere føle sig usikre. Eksperter har derfor samlet nogle enkle råd til, hvordan man bedst beskytter sig, hvis man skulle møde aliens.</p>
+
+            <ul>
+              <li>1. Hold roen Panik kan forvirre både mennesker og væsener. Tag dybe vejrtrækninger og prøv at observere, hvordan væsenerne opfører sig. Mange aliens virker nysgerrige snarere end aggressive.</li>
+              <li>2. Find et sikkert sted Hvis du befinder dig i dit hjem eller på plejehjemmet, søg et rum med låsbar dør. Rum med vinduer giver dig mulighed for at holde øje med situationen uden at blive bemærket.</li>
+              <li>3. Kommunikation via lys eller lyd Eksperter råder til at bruge lamper, reflekterende genstande eller rolige lyde til at signalere, at du ikke er en trussel. Mange væsener reagerer på mønstre og rytme, ikke på tale.</li>
+              <li>4. Hold afstand Selvom nogle aliens virker venlige, bør man bevare en sikker afstand. Brug møbler som barrierer, og bevæg dig langsomt, hvis du skal ændre position.</li>
+              <li>5. Brug små forsvarsværktøjer En paraply, stok eller andet langt redskab kan bruges til at skabe afstand uden at skade væsenerne. Husk: formålet er at beskytte dig selv, ikke at angribe.</li>
+              <li>6. Søg hjælp Kontakt personale, naboer eller myndigheder. Selv i tilfælde af invasion er samarbejde ofte den sikreste strategi.</li>
+              <li>7. Husk din sunde fornuft De fleste rapporter indikerer, at aliens ikke udgør direkte fare for ældre borgere. Forsigtighed kombineret med ro og observation er typisk nok til at holde sig sikker.</li>
+            </ul>
+
+            <button popovertarget="tip_popover" class="cta_btn">Luk</button>
+          </div>
         </article>
         <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <h3>Information</h3>
+          <p>Hvilke sygdomme vil aliens teste på mennesker?</p>
+          <img src="img/sick.png" alt="syg" />
+          <button popovertarget="syg_popover" class="cta_btn">Læs mere</button>
+
+          <div id="syg_popover" popover>
+            <h2>Eksperter spekulerer: Hvilke sygdomme vil aliens teste på mennesker?</h2>
+            <p>SOLBAKKEN 4. november 2025</p>
+
+            <p>Med aliens, der pludselig dukker op på plejehjem og i haver, spekulerer forskere nu på, hvilke konkrete menneskelige sygdomme de kunne finde mest interessante at studere. Her er nogle specifikke bud:</p>
+            <ul>
+              <li>
+                1. Alzheimers sygdom Aliens kunne være fascinerede af, hvordan hukommelsen forsvinder gradvist, og hvordan hjernen reagerer på kognitive nedbrud. Observation af ældre beboere med demens kan give dem indsigt i menneskelig læring og
+                erindring.
+              </li>
+              <li>2. Type 2-diabetes Blodsukkerregulering og metabolisme er komplekse og kan virke mystiske for udenjordiske biologer. Aliens kan finde det interessant at observere, hvordan kroppen håndterer sukker og insulin over tid.</li>
+              <li>
+                3. Influenza og forkølelse Selvom almindelige mennesker ser influenza som trivielt, er det en oplagt kandidat for aliens, der ønsker at forstå, hvordan virus spredes, hvordan immunsystemet reagerer, og hvordan feber udvikler sig.
+              </li>
+              <li>4. Gigt og slidgigt Smerte og bevægelsesbegrænsning kunne være en nøgle til at forstå muskuloskeletale systemer. Aliens kunne observere, hvordan kroppen reagerer på belastning og hvile, og hvordan medicin påvirker symptomerne.</li>
+              <li>5. Allergiske reaktioner Alt fra høfeber til madallergi kan give aliens indblik i immunforsvarets overreaktioner. Eksempelvis kan nældefeber eller hævelse ved peanutallergi være interessante for dem at måle respons på stimuli.</li>
+              <li>
+                6. Stress- og angstrelaterede reaktioner Fysiske symptomer på stress, som hjertebanken, sved og søvnløshed, kan være lige så interessante som traditionelle sygdomme. Aliens kan forsøge at forstå, hvordan mennesker håndterer frygt og
+                overraskelse — fx under en invasion.
+              </li>
+            </ul>
+
+            <p>Eksperternes råd Selvom dette lyder skræmmende, er der ingen rapporter om, at aliens direkte har forårsaget sygdomme. Den bedste strategi er stadig ro, observation og kontakt med myndigheder.</p>
+            <button popovertarget="syg_popover" class="cta_btn">Luk</button>
+          </div>
         </article>
       </section>
     </main>
@@ -115,5 +184,6 @@
     </footer>
     <script src="js/burger.js"></script>
     <!-- <script src="js/main.js"></script> -->
+     <script src="js/dark.js"></script>
   </body>
 </html>
